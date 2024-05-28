@@ -2,7 +2,7 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 import controldiffeq
-from vector_fields import *
+from vector_fields_layer_norm_agc import *
 
 class NeuralGCDE(nn.Module):
     def __init__(self, args, func_f, func_g, input_channels, hidden_channels, output_channels, initial, device, atol, rtol, solver):
