@@ -1,5 +1,5 @@
-from vector_fields import *
-from GCDE import *
+from vector_fields_layer_norm_agc import *
+from GCDE_layer_norm_agc import *
 
 def make_model(args):
     if args.model_type == 'type1':
